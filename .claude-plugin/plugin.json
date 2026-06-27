@@ -1,0 +1,9 @@
+{
+  "name": "dev-proposal-toolkit",
+  "version": "0.1.0",
+  "description": "Web・システム開発案件の受注提案を一気通貫でサポートするスキルセット。市場調査→技術設計→UI/UX設計→見積もり→提案書作成までをカバー。",
+  "author": {
+    "name": "dai"
+  },
+  "keywords": ["proposal", "estimator", "market-research", "engineer", "design", "pptx", "japanese"]
+}
