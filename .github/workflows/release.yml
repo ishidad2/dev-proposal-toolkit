@@ -1,6 +1,9 @@
 name: Release Plugin
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -14,7 +17,7 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
+    if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v4
         with:
